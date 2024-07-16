@@ -1,9 +1,12 @@
 import React from "react";
+import { client } from "../sanity/client";
 export async function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 export default async function page() {
   await wait(1000);
+  const posts = await fetchPosts();
+  console.log("My Latst Post:", posts);
   return (
     <>
       <div className="container mx-auto p-2 mt-24">
@@ -52,4 +55,9 @@ export default async function page() {
       </div>
     </>
   );
+}
+export async function fetchPosts() {
+  const query = `*[_type == "user"]`;
+  const posts = await client.fetch(query);
+  return posts;
 }
