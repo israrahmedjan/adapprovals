@@ -9,6 +9,10 @@ export default async function page() {
   console.log("My Latst Post:", posts);
   return (
     <>
+      <pre>
+        <p>{JSON.stringify(posts, null, 2)}</p>
+      </pre>
+
       <div className="container mx-auto p-2 mt-24">
         <div className="">
           <h2 className="text-2xl text-customRed">Contact Us</h2>
