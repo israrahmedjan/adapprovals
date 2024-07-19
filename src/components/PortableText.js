@@ -22,7 +22,7 @@ const serializers = {
     //   }
     // },
     image: ({ value }) => {
-      console.log("Value is that", value);
+      // console.log("Value is that", value);
       const { asset, alt } = value;
       if (!asset) return null;
 
