@@ -14,10 +14,13 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@sanity/image-url": "^1.0.2",
+    "glob": "^11.0.0",
+    "inflight": "^1.0.6",
     "next": "14.2.4",
     "next-sanity": "^9.4.2",
     "react": "^18",
     "react-dom": "^18",
+    "rimraf": "^6.0.1",
     "swiper": "^11.1.4"
   },
   "devDependencies": {
