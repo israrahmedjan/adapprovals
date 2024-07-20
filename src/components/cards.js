@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 
 export default async function Cards({ services }) {
-  console.log("My services", services);
+  //console.log("My services", services);
   return (
     <>
       <div className="container mx-auto p-2">
