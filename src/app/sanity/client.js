@@ -8,8 +8,8 @@ import { createClient } from "next-sanity";
 // });
 
 export const client = createClient({
-  projectId: process.env.projectId, // find this at manage.sanity.io or in your sanity.json
-  dataset: process.env.dataset, // this is usually 'production'
+  projectId: process.env.projectId_En, // find this at manage.sanity.io or in your sanity.json
+  dataset: process.env.dataset_En, // this is usually 'production'
   apiVersion: "2024-07-13", // use a UTC date string
   useCdn: false, // `false` if you want to ensure fresh data
 });

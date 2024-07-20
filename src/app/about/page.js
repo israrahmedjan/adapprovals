@@ -26,7 +26,10 @@ export default async function page() {
                       <div>
                         {/* <PortableText value={pg.pagedetail} /> */}
 
-                        <CustomPortableText key={i} blocks={pg.pagedetail} />
+                        <CustomPortableText
+                          key={pg.pageslug}
+                          blocks={pg.pagedetail}
+                        />
                       </div>
                     </div>
                   </div>
