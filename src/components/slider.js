@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
@@ -27,8 +28,15 @@ export default function Slider() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img
+            {/* <Image
               src="/images/banner.jpg"
+              style={{ width: "100%", height: "550px", objectFit: "cover" }}
+            /> */}
+            <Image
+              src="/images/banner.jpg"
+              alt="slier image"
+              width={800} // You can set a placeholder width
+              height={550} // You can set a placeholder height
               style={{ width: "100%", height: "550px", objectFit: "cover" }}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-start">

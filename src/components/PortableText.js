@@ -32,14 +32,14 @@ const serializers = {
 
       return (
         <div>
-          <img src={imageUrl} />
-          {/* <Image
+          {/* //   <img src={imageUrl} /> */}
+          <Image
             src={imageUrl}
             alt={alt || "Image"}
             layout="responsive"
             width={20} // adjust width as necessary
             height={20} // adjust height as necessary
-          /> */}
+          />
         </div>
       );
     },

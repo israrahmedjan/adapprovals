@@ -13,7 +13,7 @@ export default async function Cards({ services }) {
           {services &&
             services.map((itm, i) => {
               return (
-                <div className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full p-2">
+                <div key={i} className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full p-2">
                   <div className="border rounded-lg overflow-hidden shadow-lg">
                     <Link href={`services/${itm.slug}`}>
                       <div className="relative mx-4 my-2 w-full">
