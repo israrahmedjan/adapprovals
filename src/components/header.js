@@ -15,14 +15,16 @@ const TopHeader = () => {
       <header className="fixed top-0 left-0 w-full bg-white text-gray-600 z-50 border-gray-200 border-b-[1px]">
         <div className="container mx-auto flex justify-between items-center p-3">
           <div className="text-lg font-bold">
-            <Image
-              src="/images/logo.png"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={34}
-              priority
-            />
+            <Link href="/">
+              <Image
+                src="/images/logo.png"
+                alt="Vercel Logo"
+                className="dark:invert"
+                width={100}
+                height={34}
+                priority
+              />
+            </Link>
           </div>
           <nav className="hidden md:flex space-x-4 font-semibold uppercase text-[15px]">
             <Link href="/">Home</Link>

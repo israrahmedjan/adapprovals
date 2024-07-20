@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-
+import Image from "next/image";
 function Footer() {
   const copyToClipBoard = () => {
     // navigator.clipboard.writeText("hello@abudhabiapprovals.ae");
@@ -12,21 +12,26 @@ function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-wrap space-x-5 align-middle">
-            <img
+            <Image
               className="w-8 h-8 mb-4"
               src="/images/shape-6.png"
               alt="Phone Icon"
+              width={20}
+              height={20}
             />
             <Link className="text-lg" href="tel:02 627 7880">
               02 627 7880
             </Link>
           </div>
           <div className="flex flex-wrap space-x-2 md:items-start">
-            <img
+            <Image
               className="w-8 h-8 mb-4"
               src="/images/shape-7.png"
               alt="Email Icon"
+              width={20}
+              height={20}
             />
+
             <div className="cursor-pointer" onClick={copyToClipBoard}>
               <p className="text-lg">hello@abudhabiapprovals.ae</p>
               <span className="text-sm">Click to copy</span>
@@ -34,31 +39,39 @@ function Footer() {
           </div>
           <div className="flex justify-center md:justify-start">
             <Link href="#" target="_blank" className="mr-4">
-              <img
+              <Image
                 className="w-8 h-8"
                 src="/images/1557428419479-shape-8.webp"
                 alt="Facebook"
+                width={20}
+                height={20}
               />
             </Link>
             <Link href="#" target="_blank" className="mr-4">
-              <img
+              <Image
                 className="w-8 h-8"
                 src="/images/1557428434698-shape-9.webp"
                 alt="Instagram"
+                width={20}
+                height={20}
               />
             </Link>
             <Link href="#" target="_blank" className="mr-4">
-              <img
+              <Image
                 className="w-8 h-8"
                 src="/images/1557428452019-shape-10.webp"
                 alt="LinkedIn"
+                width={20}
+                height={20}
               />
             </Link>
             <Link href="#" target="_blank" className="mr-4">
-              <img
+              <Image
                 className="w-8 h-8"
                 src="/images/1557428489964-shape-13.webp"
                 alt="YouTube"
+                width={20}
+                height={20}
               />
             </Link>
           </div>

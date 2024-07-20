@@ -17,7 +17,12 @@ export default async function Cards({ services }) {
                   <div className="border rounded-lg overflow-hidden shadow-lg">
                     <Link href={`services/${itm.slug}`}>
                       <div className="relative mx-4 my-2 w-full">
-                        <img src={`${itm.pagefeatured}`} alt="DMT Approval" />
+                        <Image
+                          src={`${itm.pagefeatured}`}
+                          alt="DMT Approval"
+                          width={50}
+                          height={50}
+                        />
                       </div>
                       <div className="p-4">
                         <h3 className="text-customRed font-bold text-lg">
