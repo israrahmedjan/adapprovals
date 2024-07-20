@@ -25,8 +25,8 @@ const serializers = {
       // console.log("Value is that", value);
       const { asset, alt } = value;
       if (!asset) return null;
-      const projectId = process.env.projectId;
-      const dataset = process.env.dataset;
+      const projectId = process.env.projectId_En;
+      const dataset = process.env.dataset_En;
       // Construct the image URL based on the asset reference
       const imageUrl = `https://cdn.sanity.io/images/${projectId}/${dataset}/${asset._ref.split("-")[1]}-${asset._ref.split("-")[2]}.${asset._ref.split("-")[3]}`;
 
