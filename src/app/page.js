@@ -4,7 +4,7 @@ import { wait } from "./about/page";
 import { fetchServices } from "@/hepler/helper";
 import { urlFor } from "@/components/imageUrlBuilder";
 export default async function Home() {
-  await wait(1000);
+  await wait(400);
 
   const services = await fetchServices();
   //console.log("Services", services);

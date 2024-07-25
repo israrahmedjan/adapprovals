@@ -12,4 +12,5 @@ export const client = createClient({
   dataset: process.env.dataset_En, // this is usually 'production'
   apiVersion: "2024-07-13", // use a UTC date string
   useCdn: false, // `false` if you want to ensure fresh data
+  token: process.env.Token_En,
 });

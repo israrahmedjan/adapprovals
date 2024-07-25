@@ -35,11 +35,12 @@ const TopHeader = () => {
             <Link className="hover:text-customRed" href="/services">
               Services
             </Link>
-            <Link className="hover:text-customRed" href="/contact">
-              Contact Us
-            </Link>
+
             <Link className="hover:text-customRed" href="/blogs">
               Blogs
+            </Link>
+            <Link className="hover:text-customRed" href="/contact">
+              Contact Us
             </Link>
           </nav>
           <div className="md:hidden">
