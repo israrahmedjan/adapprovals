@@ -44,7 +44,7 @@ export default function Slider() {
                 <input
                   type="text"
                   className="h-16 w-[350px] p-3 border border-gray-500"
-                  placeholder="Search of Services 11"
+                  placeholder="Search of Services"
                 />
                 <h1 className="text-white text-4xl font-bold uppercase">
                   RESIDENTIAL APPROVAL
